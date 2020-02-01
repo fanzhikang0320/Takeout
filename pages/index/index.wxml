@@ -1,0 +1,79 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+<!-- 搜索 -->
+<view class="header {{scrollDown ? 'scrolled' : ''}}">
+  <view class="location">
+    <image src="/source/index/location.png" class="icon"></image>
+    定位中
+  </view>
+  <view class="search" bindtap="tapSearch">
+    <image src="/source/index/search.png" class="icon"></image>
+    <i class="fa-home"></i>
+    辣子鸡丁
+  </view>
+
+</view>
+
+
+<!-- 滚动条 -->
+  <swiper class="swiper" autoplay="true">
+    <block wx:for="{{banners}}" wx:key="{{item.id}}">
+      <swiper-item>
+        <image src="{{item.img}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+<!-- 滚动菜单区域 -->
+  <swiper indicator-dots class="menu-swiper">
+    <swiper-item>
+      <view class="swiper-item">
+        <view class="menu">
+          <image src=""></image>
+          <text></text>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="swiper-item">
+        <view class="menu">
+          <image src=""></image>
+          <text></text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+<!-- 优惠专区 -->
+  <view class="section">
+    <view class="section-title">优惠专区</view>
+    <image src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2281659694,309144934&fm=26&gp=0.jpg"></image>
+  </view>
+<!-- 为你优选 -->
+  <view class="section">
+    <view class="section-title">为你优选</view>
+    <image src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2281659694,309144934&fm=26&gp=0.jpg"></image>
+  </view>
+<!-- 特色频道 -->
+  <view class="section">
+    <view class="section-title">特色频道</view>
+    <image src="https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2281659694,309144934&fm=26&gp=0.jpg"></image>
+  </view>
+<!-- 附近商家 -->
+  <view class="section">
+    <view class="section-title">附近商家</view>
+    <view class="filters">
+      <view bindtap="tapFilter" data-id="1" class="filter {{filterId == 1 ? 'active' : ''}}">综合排序<text class="v">↑</text></view>
+      <view bindtap="tapFilter" data-id="2" class="filter {{filterId == 2 ? 'active' : ''}}">销量最高<text class="v">↑</text></view>
+      <view bindtap="tapFilter" data-id="3" class="filter {{filterId == 3 ? 'active' : ''}}">距离最近<text class="v">↑</text></view>
+    </view>
+  </view>
+<!-- 展示附近商家数据 -->
+  <view class="fujin-list">
+    <navigator url="/pages/shop/shop?id=1">
+      <image src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3588341421,2019912377&fm=26&gp=0.jpg" class="img-shops"></image>
+    </navigator>
+    <navigator url="">
+      <image src="https://dss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3588341421,2019912377&fm=26&gp=0.jpg" class="img-shops"></image>
+    </navigator>
+  </view>
+
+</view>

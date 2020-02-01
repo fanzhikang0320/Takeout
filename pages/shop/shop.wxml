@@ -1,0 +1,53 @@
+<!--pages/shop/shop.wxml-->
+<view class="container">
+<!-- 头部店铺信息 -->
+  <view class="header">
+    <image src="https://dss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1983754219,458383409&fm=26&gp=0.jpg" class="logo"></image>
+    <view class="name">张亮麻辣烫</view>
+    <view class="welcome ellipsis">公告： 好吃xxxxxxxxxxxxxxxxx</view>
+    <view class="follow">收藏</view>
+    <view class="line"></view>
+    <view class="desc">满35-3，满60-30</view>
+  </view>
+<!-- 菜品信息 -->
+  <view class="content-container">
+    <scroll-view class="classify-container" scroll-y>
+      <view class="classify">
+        <view class="name">热销</view>
+      </view>
+      <view class="classify">
+        <view class="name">新品</view>
+      </view>
+    </scroll-view>
+    <scroll-view class="goods-container" scroll-y>
+      <view>
+        <view class="title">热销</view>
+        <view class="goods">
+          <image src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1183485995,3229591286&fm=26&gp=0.jpg" class="pic"></image>
+          <view class="name ellipsis">菠菜</view>
+          <view class="sold">月销344</view>
+          <view class="price">￥4.00</view>
+          <view class="addCart">
+            <image src="/source/shop/add.png"></image>
+          </view>
+        </view>
+      </view>
+    
+    </scroll-view>
+  </view>
+
+
+
+<!-- 结算区域 -->
+  <view class="cart">
+    <view class="data">
+      <view class="icon">
+        <image src="/source/shop/shopCar.png"></image>
+        <view class="count">5</view>
+      </view>
+      <view class="total">￥64</view>
+    </view>
+    <button>去结算</button>
+  </view>
+  
+</view>

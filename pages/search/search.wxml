@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="search">
+      <image class="icon" src="/source/index/search.png"></image>
+      <input placeholder="辣子鸡丁"></input>
+    </view>
+    <button size="mini" class="yellow">搜索</button>
+  </view>
+
+  <view class="result">
+    <scroll-view scroll-y>
+      <view class="shop">
+        <navigator url="">
+          <image src="https://dss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1183485995,3229591286&fm=26&gp=0.jpg"></image>
+        
+        </navigator>
+      </view>
+    </scroll-view>
+  
+  </view>
+
+
+
+</view>
